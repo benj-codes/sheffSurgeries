@@ -2,5 +2,5 @@ package com.bwillis
 
 class ReceptionistController {
 
-    def scaffold = Receptionist
+    def scaffold = com.bwillis.Receptionist
 }

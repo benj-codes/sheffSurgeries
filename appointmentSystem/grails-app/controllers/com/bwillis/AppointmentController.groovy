@@ -2,5 +2,5 @@ package com.bwillis
 
 class AppointmentController {
 
-    def scaffold = Appointment
+    def scaffold = com.bwillis.Appointment
 }

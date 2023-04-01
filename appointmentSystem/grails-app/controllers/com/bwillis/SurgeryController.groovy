@@ -2,5 +2,5 @@ package com.bwillis
 
 class SurgeryController {
 
-    def scaffold = Surgery
+    def scaffold = com.bwillis.Surgery
 }
