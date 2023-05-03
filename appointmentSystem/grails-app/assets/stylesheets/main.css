@@ -6,6 +6,12 @@ input, select, textarea {
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+p {
+    font-weight: bold;
 }
 
 /* BASE LAYOUT */
@@ -25,7 +31,7 @@ html {
 }
 
 html.no-cssgradients {
-    background-color: #aaa;
+    background-color: #95E1FF;
 }
 
 html * {
@@ -33,16 +39,16 @@ html * {
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #bcc2f3;
     color: #333333;
     overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
-    -moz-box-shadow: 0 0 0.3em #424649;
-    -webkit-box-shadow: 0 0 0.3em #424649;
-    box-shadow: 0 0 0.3em #424649;
+    -moz-box-shadow: 0 0 0.3em #D8D9F1 ;
+    -webkit-box-shadow: 0 0 0.3em #D8D9F1 ;
+    box-shadow: 0 0 0.3em #D8D9F1 ;
 }
 
 #grailsLogo {
-    background-color: #feb672;
+    background-color: #D8CF17;
 }
 
 a:hover, a:active {
@@ -50,7 +56,7 @@ a:hover, a:active {
 }
 
 h1, h2, h3 {
-    font-weight: normal;
+    font-weight: bolder;
     font-size: 1.25em;
     margin: 0.8em 0 0.3em 0;
 }
@@ -70,7 +76,12 @@ img {
     margin: 1em;
 }
 
-.content {
+.container {
+    background-color: #bcc2f3;
+}
+
+#content {
+    background-color: #bcc2f3;
 }
 
 .content h1 {
@@ -96,7 +107,7 @@ img {
 }
 
 .footer {
-    background: #424649;
+    background: #bcc2f3;
     color: #ffffff;
     clear: both;
     font-size: 1em;
@@ -105,7 +116,7 @@ img {
 }
 
 .footer a {
-    color: #feb672;
+    color: #1720D8;
 }
 
 .spinner {
@@ -120,9 +131,17 @@ img {
 }
 
 /* NAVIGATION MENU */
+.navbar {
+    background-color: #969fdf; /* change for nav-bar colour*/
+}
+
+.container-fluid {
+    background-color: #969fdf; /*change for nav bar colour*/
+}
 
 .nav {
     zoom: 1;
+    background-color: #969fdf; /* change for navbar colour*/
 }
 
 .nav ul {
@@ -137,6 +156,7 @@ img {
     list-style-type: none;
     margin-right: 0.5em;
     padding: 0;
+    color: #1720D8;
 }
 
 .nav a {
@@ -161,7 +181,7 @@ img {
 
 .nav a:focus, .nav a:hover {
     background-color: #999999;
-    color: #ffffff;
+    color: blue;
     outline: none;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
@@ -191,8 +211,38 @@ img {
 }
 
 .nav li.dropdown.show ul.dropdown-menu {
-    background-color: #424649;
+    background-color: #666666;
 }
+
+/*NAVBAR LINKS*/
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, red, blue);
+    width: 100%;
+    padding: 10px;
+    height: 70px;
+}
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .navbar-links li {
+    padding: 0 20px;
+    color: rgb(154, 107, 199);
+  }
+
+  .navbar-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+  }
+
+  .navbar-links li a:hover {
+    color: rgb(52, 30, 131);
+  }
 
 /* CREATE/EDIT FORMS AND SHOW PAGES */
 
@@ -388,6 +438,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 1em;
+    height: 300px;
 }
 
 tr {
@@ -410,7 +461,7 @@ td, th {
 }
 
 th {
-    background-color: #efefef;
+    background-color: #95BAFF;
     background-image: -moz-linear-gradient(top, #ffffff, #eaeaea);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #eaeaea));
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#ffffff', EndColorStr = '#eaeaea');
@@ -431,11 +482,11 @@ th a {
 }
 
 th a:link, th a:visited {
-    color: #666666;
+    color: #114BB9;
 }
 
 th a:hover, th a:focus {
-    color: #333333;
+    color: #114BB9;
 }
 
 th.sortable a {
@@ -536,7 +587,7 @@ th:hover, tr:hover {
 
 .buttons input:hover, .buttons input:focus,
 .buttons a:hover, .buttons a:focus {
-    background-color: #999999;
+    background-color:#95E1FF;
     color: #ffffff;
     outline: none;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
@@ -576,14 +627,23 @@ a.skip {
 }
 
 .grails-logo-container {
-    background: #7c7c7c no-repeat 50% 30%;
+    background: #D8D9F1  no-repeat 50% 30%;
     margin-bottom: 20px;
     color: white;
     height:300px;
     text-align:center;
 }
 
+.grails-logo {
+    background-color: #a3abec;
+}
+
 img.grails-logo {
     height:340px;
     margin-top:-10px;
 }
+
+/*EXTRAS*/
+
+/*OTHER*/
+  
